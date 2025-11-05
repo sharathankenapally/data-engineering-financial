@@ -1,0 +1,17 @@
+2025-11-05 15:38:59,143 | INFO | \U0001f3e6 Starting Financial Data Pipeline...
+2025-11-05 15:38:59,145 | INFO | \u2705 Extracted 10 records
+2025-11-05 15:38:59,153 | INFO | \u2705 Transformation complete
+2025-11-05 15:38:59,163 | INFO | \U0001f389 Pipeline finished successfully!
+2025-11-05 15:40:38,936 | INFO | \U0001f3e6 Starting Financial Data Pipeline...
+2025-11-05 15:40:38,936 | INFO | \u2705 Extracted 10 records
+2025-11-05 15:40:38,946 | INFO | \u2705 Transformation complete
+2025-11-05 15:40:38,958 | INFO | \u2705 Data successfully loaded into SQLite database
+2025-11-05 15:40:38,962 | INFO | \U0001f389 Pipeline finished successfully!
+2025-11-05 15:44:48,101 | INFO | \U0001f3e6 Starting Financial Data Pipeline...
+2025-11-05 15:44:48,112 | INFO | \u2705 Extracted 10 records
+2025-11-05 15:44:48,114 | INFO | \u2705 Transformation complete
+2025-11-05 15:44:48,145 | INFO | \u2705 Data successfully loaded into SQLite database
+2025-11-05 15:44:49,238 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-11-05 15:44:49,238 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-11-05 15:44:49,376 | INFO | \U0001f3a8 Visualization created successfully
+2025-11-05 15:44:49,378 | INFO | \U0001f389 Pipeline finished successfully!

@@ -1,0 +1,6 @@
+﻿transaction_id,account_id,amount,transaction_type,currency,transaction_date
+2001,A101,600,credit,USD,2025-02-02
+2002,A102,250,debit,USD,2025-02-03
+2003,A103,400,credit,USD,2025-02-03
+2004,A104,500,debit,USD,2025-02-04
+2005,A104,1000,credit,USD,2025-02-04
