@@ -46,8 +46,8 @@ try:
 
     # 6️⃣ Create visualization
     visualize_report(summary_file, monthly_file)
-    logger.info("🎨 Visualization created successfully")
-    logger.info("🎉 Pipeline finished successfully!")
+    logger.info("Visualization created successfully")
+    logger.info("Pipeline finished successfully!")
 
 except Exception as e:
-    logger.exception(f"❌ Pipeline failed due to error: {e}")
+    logger.exception(f"Pipeline failed due to error: {e}")

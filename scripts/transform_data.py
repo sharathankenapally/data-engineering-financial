@@ -21,5 +21,5 @@ def transform_data(df):
     df['is_credit'] = df['transaction_type'].apply(lambda x: 1 if x == 'credit' else 0)
     df['is_debit'] = df['transaction_type'].apply(lambda x: 1 if x == 'debit' else 0)
 
-    print("✅ Transformation complete")
+    print("Transformation complete")
     return df

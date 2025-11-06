@@ -28,4 +28,4 @@ def visualize_report(summary_file, monthly_file):
     plt.savefig(plot_file)
     plt.close()
 
-    print(f"✅ Visualization saved: {plot_file}")
+    print(f"Visualization saved: {plot_file}")

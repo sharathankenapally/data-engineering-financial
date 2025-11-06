@@ -28,4 +28,4 @@ data2 = {
 }
 pd.DataFrame(data2).to_csv(os.path.join(data_folder,'transactions2.csv'), index=False, encoding='utf-8-sig')
 
-print("✅ Clean CSVs generated in", data_folder)
+print("Clean CSVs generated in", data_folder)

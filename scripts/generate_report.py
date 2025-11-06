@@ -29,5 +29,5 @@ def generate_report(df):
     monthly_file = os.path.join(report_folder, f'monthly_summary_{timestamp}.csv')
     monthly.to_csv(monthly_file, index=False)
 
-    print(f"✅ Summary report generated: {report_file}")
-    print(f"✅ Monthly summary generated: {monthly_file}")
+    print(f"Summary report generated: {report_file}")
+    print(f"Monthly summary generated: {monthly_file}")

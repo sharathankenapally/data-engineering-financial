@@ -20,10 +20,10 @@ def data_quality_check(df):
         errors.append("Invalid currency code found")
 
     if errors:
-        print("❌ Data Quality Check Failed:")
+        print("Data Quality Check Failed:")
         for err in errors:
             print(" -", err)
         return False
     else:
-        print("✅ Data Quality Check Passed")
+        print("Data Quality Check Passed")
         return True
