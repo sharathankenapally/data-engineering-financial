@@ -7,30 +7,38 @@ from generate_report import generate_report
 from visualize_report import visualize_report
 from logger_setup import setup_logger
 import os
+import pandas as pd
 
 # Initialize logger
 logger = setup_logger()
-logger.info("🏦 Starting Financial Data Pipeline...")
+logger.info("Starting Financial Data Pipeline...")
 
 try:
-    # 1️⃣ Extract
+    # Extract
     df = extract_data()
-    logger.info(f"✅ Extracted {df.shape[0]} records")
+    logger.info(f"Extracted {df.shape[0]} records")
 
-    # 2️⃣ Transform
+    # Transform
     df = transform_data(df)
-    logger.info("✅ Transformation complete")
+    logger.info("Transformation complete")
 
-    # 3️⃣ Data Quality Check
+    # Save processed data for verification
+    data_dir = os.path.join(os.path.dirname(__file__), '..', 'data', 'output')
+    os.makedirs(data_dir, exist_ok=True)
+    processed_path = os.path.join(data_dir, 'processed_transactions.csv')
+    df.to_csv(processed_path, index=False)
+    logger.info(f"Processed data saved at: {processed_path}")
+
+    # Data Quality Check
     if not data_quality_check(df):
-        logger.error("⚠️ Data Quality Check Failed. Pipeline stopped.")
+        logger.error("Data Quality Check Failed. Pipeline stopped.")
         exit()
 
-    # 4️⃣ Load into SQLite
+    # Load into SQLite
     load_data(df)
-    logger.info("✅ Data successfully loaded into SQLite database")
+    logger.info("Data successfully loaded into SQLite database")
 
-    # 5️⃣ Generate summary reports
+    # Generate summary reports
     generate_report(df)
 
     # Get latest report files
@@ -44,7 +52,7 @@ try:
         key=os.path.getctime
     )
 
-    # 6️⃣ Create visualization
+    # Create visualization
     visualize_report(summary_file, monthly_file)
     logger.info("Visualization created successfully")
     logger.info("Pipeline finished successfully!")

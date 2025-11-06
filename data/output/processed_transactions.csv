@@ -1,0 +1,11 @@
+transaction_id,account_id,amount,transaction_type,currency,transaction_date,month,is_credit,is_debit
+1001,A101,500,credit,USD,2025-01-02,January,1,0
+1002,A102,200,debit,USD,2025-01-03,January,0,1
+1003,A101,150,credit,USD,2025-01-04,January,1,0
+1004,A103,0,debit,USD,2025-01-05,January,0,1
+1005,A104,1000,credit,USD,2025-01-05,January,1,0
+2001,A101,600,credit,USD,2025-02-02,February,1,0
+2002,A102,250,debit,USD,2025-02-03,February,0,1
+2003,A103,400,credit,USD,2025-02-03,February,1,0
+2004,A104,500,debit,USD,2025-02-04,February,0,1
+2005,A104,1000,credit,USD,2025-02-04,February,1,0

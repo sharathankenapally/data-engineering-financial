@@ -15,3 +15,12 @@
 2025-11-05 15:44:49,238 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
 2025-11-05 15:44:49,376 | INFO | \U0001f3a8 Visualization created successfully
 2025-11-05 15:44:49,378 | INFO | \U0001f389 Pipeline finished successfully!
+2025-11-06 08:06:27,116 | INFO | Starting Financial Data Pipeline...
+2025-11-06 08:06:27,171 | INFO | Extracted 10 records
+2025-11-06 08:06:27,182 | INFO | Transformation complete
+2025-11-06 08:06:27,189 | INFO | Processed data saved at: C:\New folder\scripts\..\data\output\processed_transactions.csv
+2025-11-06 08:06:27,230 | INFO | Data successfully loaded into SQLite database
+2025-11-06 08:06:28,168 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-11-06 08:06:28,168 | INFO | Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-11-06 08:06:28,379 | INFO | Visualization created successfully
+2025-11-06 08:06:28,379 | INFO | Pipeline finished successfully!
